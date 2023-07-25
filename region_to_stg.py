@@ -1,0 +1,8 @@
+from connection import cs
+cs.execute("USE DATABASE PRATISTHA")
+
+sql ="""INSERT INTO PRATISTHA.STG.STG_D_REGION
+SELECT * FROM BHATBHATENI.TRANSACTIONS.REGION"""
+
+cs.execute(sql)
+
